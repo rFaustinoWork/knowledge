@@ -9,7 +9,96 @@
 
     <body>
         <textarea id="textarea1">
+{
+    "style": {
+        "byte_width": 20,
+        "stroke_style": "gray",
+        "font_byte_nr": "12px serif",
+        "font_field_name": "14px Arial",
+        "fill_byte_nr": "blue",
+        "fill_field_name": "black",
+    "font_packet_name": "14px serif",
+        "fill_packet_name": "#990188"
 
+    },
+    "packets":
+    [
+        {
+            "name": "packet test",
+            "bits": [
+                {
+                    "name": "sync data blablabla",
+                    "first": 0,
+                    "length": 3
+                },
+                {
+                    "name": "control bits",
+                    "first": 3,
+                    "length": 1
+                },
+                {
+                    "name": "Bit position",
+                    "first": 4,
+                    "length": 2
+                },
+    
+                {
+                    "name": "Balise data",
+                    "first": 6,
+                    "length": 25
+                },
+                {
+                    "name": "End of frame",
+                    "first": 31,
+                    "length": 1
+                }
+            ]
+        },
+    {
+            "name": "Control bits",
+            "bits": [
+                {
+                    "name": "reserved",
+                    "first": 0,
+                    "length": 5	
+                },
+        {
+                    "name": "stop signal",
+                    "first": 5,
+                    "length": 1	
+                },
+        {
+                    "name": "link test",
+                    "first": 6,
+                    "length": 1	
+                },
+        {
+                    "name": "normal data",
+                    "first": 7,
+                    "length": 1	
+                }
+        
+            ]
+    },
+    {
+            "name": "packet test 2",
+            "bits": [
+                {
+                    "name": "Ahahahahahaha",
+                    "first": 0,
+                    "length": 15
+                },
+                {
+                    "name": "End of frame",
+                    "first": 15,
+                    "length": 1
+                }
+        
+            ]
+    }
+    ]
+}
+            
         </textarea>
         <canvas id="canvas1"></canvas>
         <button id="id_btn_generate" onclick="btn_generate_click()">Generate packet</button>
