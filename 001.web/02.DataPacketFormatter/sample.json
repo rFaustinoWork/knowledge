@@ -1,0 +1,47 @@
+{
+    "style": {
+        "byte_width": 15,
+        "stroke_style": "gray",
+        "font_byte_nr": "12px serif",
+        "font_field_name": "14px serif",
+        "font_packet_name": "14px serif",
+        "fill_byte_nr": "red",
+        "fill_field_name": "green",
+        "fill_packet_name": "black"
+
+    },
+    "packets":
+    [
+        {
+            "name": "packet test",
+            "bits": [
+                {
+                    "name": "sync",
+                    "first": 0,
+                    "length": 3
+                },
+                {
+                    "name": "control bits",
+                    "first": 3,
+                    "length": 1
+                },
+                {
+                    "name": "Bit position",
+                    "first": 4,
+                    "length": 2
+                },
+                {
+                    "name": "Balise data",
+                    "first": 6,
+                    "length": 25
+                },
+                {
+                    "name": "End of frame",
+                    "first": 31,
+                    "length": 1
+                }
+            ]
+        }
+    ]
+}
+

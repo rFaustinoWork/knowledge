@@ -1,3 +1,4 @@
+
 # Word Object Model
 
 See [Word object model overview](https://learn.microsoft.com/en-us/visualstudio/vsto/word-object-model-overview?view=vs-2022&tabs=csharp)
